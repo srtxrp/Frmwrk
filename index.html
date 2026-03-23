@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{background:#080808;color-scheme:dark;}
-body{background:#080808;color:#f2ede8;font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:300;overflow-x:hidden;-webkit-text-size-adjust:100%;}
+html{background:#080808;color-scheme:dark;overflow-x:hidden;max-width:100%;}
+body{background:#080808;color:#f2ede8;font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:300;overflow-x:hidden;overflow-y:auto;-webkit-text-size-adjust:100%;max-width:100%;position:relative;}
 
 /* Kill ALL Safari blue link coloring */
 a,a:link,a:visited,a:hover,a:active{color:#f2ede8!important;text-decoration:none!important;-webkit-tap-highlight-color:transparent;}
@@ -27,7 +27,8 @@ nav.scrolled{background:rgba(8,8,8,0.96);border-bottom:1px solid rgba(255,255,25
 @media(max-width:600px){.nav-links{display:none;}}
 
 /* HERO */
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 28px 64px;position:relative;overflow:hidden;background:#080808;}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 28px 56px;position:relative;overflow:hidden;background:#080808;}
+@media(max-width:600px){.hero{min-height:85vh;}}
 .hero-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 65% 40%,rgba(255,77,28,0.15) 0%,transparent 70%);}
 .hero-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#ff4d1c;margin-bottom:18px;animation:fadeUp 0.7s 0.1s both;}
 .hero h1{font-family:‘Bebas Neue’,Impact,sans-serif;font-size:clamp(68px,20vw,180px);line-height:0.92;color:#f2ede8;animation:fadeUp 0.7s 0.25s both;}
