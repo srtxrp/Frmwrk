@@ -12,10 +12,10 @@ html{background:#080808;color-scheme:dark;overflow-x:hidden;max-width:100%;}
 body{background:#080808;color:#f2ede8;font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:300;overflow-x:hidden;overflow-y:auto;-webkit-text-size-adjust:100%;max-width:100%;position:relative;}
 a,a:link,a:visited,a:hover,a:active{color:#f2ede8!important;text-decoration:none!important;-webkit-tap-highlight-color:transparent;}
 button{-webkit-tap-highlight-color:transparent;color:inherit;}
- 
+
 /* — ACCENT COLOR: ORANGE — */
 :root{--orange:#e8650a;--orange-glow:rgba(232,101,10,0.18);}
- 
+
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:20px 28px;background:transparent;transition:background 0.3s;}
 nav.scrolled{background:rgba(8,8,8,0.96);border-bottom:1px solid rgba(255,255,255,0.07);}
@@ -24,7 +24,7 @@ nav.scrolled{background:rgba(8,8,8,0.96);border-bottom:1px solid rgba(255,255,25
 .nav-links{display:flex;gap:28px;list-style:none;align-items:center;}
 .nav-links a{color:#888!important;font-size:11px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;}
 .nav-cta{background:var(--orange);color:#ffffff!important;padding:9px 18px;font-size:10px!important;letter-spacing:1.5px!important;font-weight:500!important;}
- 
+
 /* HAMBURGER */
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
 .hamburger span{display:block;width:22px;height:2px;background:#f2ede8;transition:all 0.3s;}
@@ -37,7 +37,7 @@ nav.scrolled{background:rgba(8,8,8,0.96);border-bottom:1px solid rgba(255,255,25
 .nav-links a{font-size:14px!important;color:#f2ede8!important;}
 .hamburger{display:flex;z-index:201;}
 }
- 
+
 /* HERO */
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 28px 56px;padding-top:80px;position:relative;overflow:hidden;background:#080808;}
 .hero-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 60% at 65% 40%,var(--orange-glow) 0%,transparent 70%);}
@@ -47,18 +47,18 @@ nav.scrolled{background:rgba(8,8,8,0.96);border-bottom:1px solid rgba(255,255,25
 .hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;margin-top:36px;gap:20px;flex-wrap:wrap;animation:fadeUp 0.7s 0.4s both;}
 .hero-sub{max-width:320px;font-size:14px;line-height:1.75;color:rgba(242,237,232,0.5);}
 .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
- 
+
 /* BUTTONS */
 .btn-primary{background:var(--orange);color:#f2ede8!important;padding:15px 32px;font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;border:none;display:inline-block;cursor:pointer;font-family:'DM Sans',sans-serif;-webkit-appearance:none;box-shadow:0 0 20px rgba(232,101,10,0.3);}
 .btn-ghost{color:#888!important;font-size:11px;letter-spacing:1px;text-transform:uppercase;background:none;border:none;border-bottom:1px solid transparent;padding-bottom:2px;cursor:pointer;font-family:'DM Sans',sans-serif;}
- 
+
 /* MARQUEE */
 .marquee-wrap{overflow:hidden;padding:14px 0;background:#080808;border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);}
 .marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 20s linear infinite;}
 .marquee-item{font-family:'Bebas Neue',Impact,sans-serif;font-size:13px;letter-spacing:4px;color:#444;white-space:nowrap;display:flex;align-items:center;gap:48px;}
 .mdot{width:4px;height:4px;background:var(--orange);border-radius:50%;display:inline-block;flex-shrink:0;}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
- 
+
 /* SERVICES */
 .section{padding:88px 28px;background:#080808;}
 .section-label{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--orange);margin-bottom:48px;}
@@ -69,16 +69,16 @@ nav.scrolled{background:rgba(8,8,8,0.96);border-bottom:1px solid rgba(255,255,25
 .service-num{font-family:'Bebas Neue',Impact,sans-serif;font-size:40px;color:rgba(242,237,232,0.05);line-height:1;margin-bottom:16px;}
 .service-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:26px;letter-spacing:1px;color:#f2ede8;margin-bottom:12px;}
 .service-desc{font-size:12px;line-height:1.8;color:rgba(242,237,232,0.38);}
- 
+
 /* WORK */
 .work-section{padding:0 28px 88px;background:#080808;}
 .work-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;}
 .work-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(40px,9vw,80px);line-height:1;color:#f2ede8;}
- 
+
 /* 3-col on desktop, 1-col on mobile */
 .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
 @media(max-width:700px){.projects-grid{grid-template-columns:1fr;}}
- 
+
 .project-card{aspect-ratio:4/3;position:relative;overflow:hidden;background:#111;box-shadow:0 0 30px rgba(232,101,10,0.06);}
 .project-bg{position:absolute;inset:0;}
 /* Diamond State Builds - blue */
@@ -94,34 +94,34 @@ nav.scrolled{background:rgba(8,8,8,0.96);border-bottom:1px solid rgba(255,255,25
 .project-info{position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(to top,rgba(8,8,8,0.94),transparent);}
 .project-tag{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:5px;}
 .project-name{font-family:'Bebas Neue',Impact,sans-serif;font-size:22px;letter-spacing:1px;color:#f2ede8;}
- 
+
 /* Hidden extra projects */
 .projects-extra{display:none;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px;}
 @media(max-width:700px){.projects-extra{grid-template-columns:1fr;}}
 .projects-extra.visible{display:grid;}
- 
+
 .view-more-btn{display:block;width:100%;margin-top:20px;padding:16px;background:transparent;border:1px solid rgba(255,255,255,0.1);color:#888!important;font-size:11px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;}
 .view-more-btn:hover{border-color:var(--orange);color:#f2ede8!important;}
- 
+
 /* STATS */
 .stats-section{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.07);border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);}
 @media(max-width:600px){.stats-section{grid-template-columns:1fr 1fr;}}
 .stat{background:#080808;padding:40px 24px;text-align:center;}
 .stat-num{font-family:'Bebas Neue',Impact,sans-serif;font-size:60px;line-height:1;color:#f2ede8;text-shadow:0 0 30px rgba(232,101,10,0.2);}
 .stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#555;margin-top:8px;}
- 
+
 /* CTA */
 .cta-section{padding:120px 28px;text-align:center;position:relative;background:#080808;overflow:hidden;}
 .cta-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 60% at 50% 50%,var(--orange-glow),transparent 70%);}
 .cta-section h2{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(52px,13vw,130px);line-height:0.95;color:#f2ede8;position:relative;margin-bottom:40px;text-shadow:0 0 80px rgba(232,101,10,0.15);}
 .cta-section h2 em{font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(242,237,232,0.18);}
- 
+
 /* FOOTER */
 footer{padding:36px 28px;background:#080808;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 .footer-copy{font-size:11px;color:#444;}
 .footer-links{display:flex;gap:20px;list-style:none;}
 .footer-links a{font-size:11px;color:#444!important;letter-spacing:1px;text-transform:uppercase;}
- 
+
 /* FORM */
 #formModal{display:none;position:fixed;inset:0;z-index:10000;align-items:center;justify-content:center;background:rgba(0,0,0,0.92);}
 #formModal.active{display:flex;}
@@ -149,15 +149,15 @@ footer{padding:36px 28px;background:#080808;border-top:1px solid rgba(255,255,25
 #btnBack{background:none;border:none;color:#555;font-size:11px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;}
 #stepCtr{font-size:10px;color:#333;margin:0 auto 0 12px;}
 #btnNext{background:var(--orange);color:#f2ede8;border:none;padding:12px 26px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;-webkit-appearance:none;}
- 
+
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity 0.6s,transform 0.6s;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 </style>
- 
+
 </head>
 <body>
- 
+
 <nav id="nav">
   <span class="logo">srtx<span>rp</span></span>
   <ul class="nav-links" id="navLinks">
@@ -170,7 +170,7 @@ footer{padding:36px 28px;background:#080808;border-top:1px solid rgba(255,255,25
     <span></span><span></span><span></span>
   </button>
 </nav>
- 
+
 <section class="hero">
   <div class="hero-glow"></div>
   <p class="hero-tag">Digital Agency — Est. 2024</p>
@@ -183,7 +183,7 @@ footer{padding:36px 28px;background:#080808;border-top:1px solid rgba(255,255,25
     </div>
   </div>
 </section>
- 
+
 <div class="marquee-wrap">
   <div class="marquee-track">
     <div class="marquee-item">Web Design <span class="mdot"></span></div>
@@ -200,7 +200,7 @@ footer{padding:36px 28px;background:#080808;border-top:1px solid rgba(255,255,25
     <div class="marquee-item">SEO <span class="mdot"></span></div>
   </div>
 </div>
- 
+
 <section class="section" id="services">
   <p class="section-label reveal">What We Do</p>
   <div class="services-grid">
@@ -212,33 +212,33 @@ footer{padding:36px 28px;background:#080808;border-top:1px solid rgba(255,255,25
     <div class="service-card reveal"><div class="service-num">06</div><div class="service-title">Strategy</div><p class="service-desc">Clarity before creativity. We figure out the what and why before touching the how.</p></div>
   </div>
 </section>
- 
+
 <section class="work-section" id="work">
   <div class="work-header reveal">
     <h2 class="work-title">Selected<br>Work</h2>
   </div>
- 
+
   <div class="projects-grid">
     <div class="project-card p4 reveal"><div class="project-bg"></div><div class="project-letter" style="color:rgba(212,175,55,0.12)">H</div><div class="project-info"><p class="project-tag" style="color:#d4af37">Barbershop · Brand</p><p class="project-name">House Of Kings</p></div></div>
     <div class="project-card p1 reveal"><div class="project-bg"></div><div class="project-letter">D</div><div class="project-info"><p class="project-tag" style="color:#4a90d9">Development Corporation · Website</p><p class="project-name">Diamond State Builds</p></div></div>
     <div class="project-card p2 reveal"><div class="project-bg"></div><div class="project-letter">A</div><div class="project-info"><p class="project-tag" style="color:#aaa">Food · Brunch</p><p class="project-name">Amaris Restaurants</p></div></div>
   </div>
- 
+
 </section>
- 
+
 <div class="stats-section">
   <div class="stat reveal"><div class="stat-num">47+</div><div class="stat-label">Projects Shipped</div></div>
   <div class="stat reveal"><div class="stat-num">98%</div><div class="stat-label">Client Satisfaction</div></div>
   <div class="stat reveal"><div class="stat-num">3×</div><div class="stat-label">Avg. Traffic Growth</div></div>
   <div class="stat reveal"><div class="stat-num">12</div><div class="stat-label">Industry Awards</div></div>
 </div>
- 
+
 <section class="cta-section" id="contact">
   <div class="cta-glow"></div>
   <h2 class="reveal">Let's Make<br><em>Something</em><br>Great.</h2>
   <button class="btn-primary reveal" onclick="openForm()">Start a Project</button>
 </section>
- 
+
 <footer>
   <p class="footer-copy">© 2024 srtxrp Agency. All rights reserved.</p>
   <ul class="footer-links">
@@ -247,7 +247,7 @@ footer{padding:36px 28px;background:#080808;border-top:1px solid rgba(255,255,25
     <li><a href="#">LinkedIn</a></li>
   </ul>
 </footer>
- 
+
 <!-- FORM MODAL -->
 <div id="formModal">
   <div id="formBox">
@@ -261,6 +261,7 @@ footer{padding:36px 28px;background:#080808;border-top:1px solid rgba(255,255,25
         <div class="fg"><label class="fl">Your Name</label><input class="fi" id="fn" type="text" placeholder="Jane Smith"></div>
         <div class="fg"><label class="fl">Email Address</label><input class="fi" id="fe" type="email" placeholder="jane@company.com"></div>
         <div class="fg"><label class="fl">Company / Brand</label><input class="fi" id="fc" type="text" placeholder="Acme Inc."></div>
+        <div class="fg"><label class="fl">Phone Number</label><input class="fi" id="fp" type="tel" placeholder="+1 (555) 000-0000"></div>
       </div>
       <div id="s2" style="display:none">
         <p class="fl" style="margin-bottom:10px">What do you need?</p>
@@ -306,22 +307,22 @@ footer{padding:36px 28px;background:#080808;border-top:1px solid rgba(255,255,25
     </div>
   </div>
 </div>
- 
+
 <script>
 const SHEET_URL='https://script.google.com/macros/s/AKfycbx0aYs3ftUXU5A0ueBd4gsLxWeng-Ri1HvLdMHwPZp2nEYHV84MPkdF_gylc8gWqZ2T/exec';
 let cur=1;
 const titles=['Tell us about you','What do you need?','Budget & Timeline','Project Details'];
- 
+
 // Nav scroll
 window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',scrollY>40));
- 
+
 function scrollTo2(id){
   closeMenu();
   if(id==='contact'){openForm();return;}
   const el=document.getElementById(id);
   if(el) el.scrollIntoView({behavior:'smooth'});
 }
- 
+
 // Hamburger
 function toggleMenu(){
   document.getElementById('navLinks').classList.toggle('open');
@@ -333,11 +334,11 @@ function closeMenu(){
   document.getElementById('hamburger').classList.remove('open');
   document.body.style.overflow='';
 }
- 
+
 // Reveal
 const obs=new IntersectionObserver((es,o)=>es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);o.unobserve(e.target);}}),{threshold:0.08});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
- 
+
 // Form
 function openForm(){document.getElementById('formModal').classList.add('active');setTimeout(()=>{const b=document.getElementById('formBox');b.style.transform='translateY(0)';b.style.opacity='1';},10);document.body.style.overflow='hidden';}
 function closeForm(){const b=document.getElementById('formBox');b.style.transform='translateY(24px)';b.style.opacity='0';setTimeout(()=>{document.getElementById('formModal').classList.remove('active');document.body.style.overflow='';},350);}
@@ -348,7 +349,7 @@ function nxt(){if(cur===1&&(!document.getElementById('fn').value.trim()||!docume
 function prev(){if(cur>1)go(cur-1);}
 async function sub(){
   const svcs=[...document.querySelectorAll('#s2 .opt.sel')].map(o=>o.textContent).join(', ');
-  const payload={submitted:new Date().toLocaleString(),name:document.getElementById('fn').value,email:document.getElementById('fe').value,company:document.getElementById('fc').value,services:svcs,budget:(document.querySelector('#bg .opt.sel')||{}).textContent||'',timeline:(document.querySelector('#tl .opt.sel')||{}).textContent||'',message:document.getElementById('fm').value,source:document.getElementById('fs').value};
+  const payload={submitted:new Date().toLocaleString(),name:document.getElementById('fn').value,email:document.getElementById('fe').value,phone:document.getElementById('fp').value,company:document.getElementById('fc').value,services:svcs,budget:(document.querySelector('#bg .opt.sel')||{}).textContent||'',timeline:(document.querySelector('#tl .opt.sel')||{}).textContent||'',message:document.getElementById('fm').value,source:document.getElementById('fs').value};
   document.getElementById('btnNext').textContent='Sending...';
   document.getElementById('btnNext').disabled=true;
   try{if(SHEET_URL!=='YOUR_APPS_SCRIPT_URL_HERE')await fetch(SHEET_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});}catch(e){}
@@ -359,6 +360,6 @@ async function sub(){
   document.getElementById('ss').style.display='';
 }
 </script>
- 
+
 </body>
 </html>
