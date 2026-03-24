@@ -22,8 +22,8 @@ nav.scrolled{background:rgba(8,8,8,0.96);border-bottom:1px solid rgba(255,255,25
 .logo{font-family:'Bebas Neue',Impact,sans-serif;font-size:22px;letter-spacing:3px;color:#f2ede8;}
 .logo span{color:var(--orange);}
 .nav-links{display:flex;gap:28px;list-style:none;align-items:center;}
-.nav-links a{color:#888!important;font-size:11px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;}
-.nav-cta{background:var(--orange);color:#ffffff!important;padding:9px 18px;font-size:10px!important;letter-spacing:1.5px!important;font-weight:500!important;}
+.nav-links a:not(.nav-cta){color:#888!important;font-size:11px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;}
+.nav-cta{background:var(--orange);color:#fff!important;padding:9px 18px;font-size:10px!important;letter-spacing:1.5px!important;font-weight:700!important;text-shadow:none!important;opacity:1!important;}
 
 /* HAMBURGER */
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
@@ -345,7 +345,7 @@ function closeForm(){const b=document.getElementById('formBox');b.style.transfor
 function tog(el){el.classList.toggle('sel');}
 function pick(el,id){document.getElementById(id).querySelectorAll('.opt').forEach(o=>o.classList.remove('sel'));el.classList.add('sel');}
 function go(n){[1,2,3,4].forEach(i=>document.getElementById('s'+i).style.display='none');document.getElementById('s'+n).style.display='';document.getElementById('ftitle').textContent=titles[n-1];document.getElementById('stepCtr').textContent='Step '+n+' of 4';document.getElementById('pb').style.width=(n/4*100)+'%';document.getElementById('btnBack').style.display=n>1?'':'none';document.getElementById('btnNext').textContent=n===4?'Submit ✓':'Next →';cur=n;}
-function nxt(){if(cur===1&&(!document.getElementById('fn').value.trim()||!document.getElementById('fe').value.trim())){alert('Please enter your name and email.');return;}if(cur===3&&!document.querySelector('#bg .opt.sel')){alert('Please select a budget range.');return;}if(cur===3&&!document.querySelector('#tl .opt.sel')){alert('Please select a timeline.');return;}if(cur<4)go(cur+1);else sub();}
+function nxt(){if(cur===1&&(!document.getElementById('fn').value.trim()||!document.getElementById('fe').value.trim())){alert('Please enter your name and email.');return;}if(cur===2&&!document.querySelector('#s2 .opt.sel')){alert('Please select at least one service.');return;}if(cur===3&&!document.querySelector('#bg .opt.sel')){alert('Please select a budget range.');return;}if(cur===3&&!document.querySelector('#tl .opt.sel')){alert('Please select a timeline.');return;}if(cur<4)go(cur+1);else sub();}
 function prev(){if(cur>1)go(cur-1);}
 async function sub(){
   const svcs=[...document.querySelectorAll('#s2 .opt.sel')].map(o=>o.textContent).join(', ');
