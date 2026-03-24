@@ -345,7 +345,7 @@ function closeForm(){const b=document.getElementById('formBox');b.style.transfor
 function tog(el){el.classList.toggle('sel');}
 function pick(el,id){document.getElementById(id).querySelectorAll('.opt').forEach(o=>o.classList.remove('sel'));el.classList.add('sel');}
 function go(n){[1,2,3,4].forEach(i=>document.getElementById('s'+i).style.display='none');document.getElementById('s'+n).style.display='';document.getElementById('ftitle').textContent=titles[n-1];document.getElementById('stepCtr').textContent='Step '+n+' of 4';document.getElementById('pb').style.width=(n/4*100)+'%';document.getElementById('btnBack').style.display=n>1?'':'none';document.getElementById('btnNext').textContent=n===4?'Submit ✓':'Next →';cur=n;}
-function nxt(){if(cur===1&&(!document.getElementById('fn').value.trim()||!document.getElementById('fe').value.trim())){alert('Please enter your name and email.');return;}if(cur<4)go(cur+1);else sub();}
+function nxt(){if(cur===1&&(!document.getElementById('fn').value.trim()||!document.getElementById('fe').value.trim())){alert('Please enter your name and email.');return;}if(cur===3&&!document.querySelector('#bg .opt.sel')){alert('Please select a budget range.');return;}if(cur===3&&!document.querySelector('#tl .opt.sel')){alert('Please select a timeline.');return;}if(cur<4)go(cur+1);else sub();}
 function prev(){if(cur>1)go(cur-1);}
 async function sub(){
   const svcs=[...document.querySelectorAll('#s2 .opt.sel')].map(o=>o.textContent).join(', ');
